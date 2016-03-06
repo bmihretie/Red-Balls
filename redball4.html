@@ -4,6 +4,8 @@
     <style>
         #redball{
             position:absolute;
+            top:150px;
+            left:150px;
         }
     </style>
     <script>
@@ -19,75 +21,141 @@
        
        function moveup(){
          var ball=$("#redball");
-         ball.animate({"top":"-=10px"},10,"linear");
+         ball.animate({"top":"-=10px"},150,"linear");
        }
        
        function moverightup(){
-         var ball=$("#redball");
-         ball.animate({"top":"-=10px"},10,"linear");
+         moeright();
+         moveup();
        }
        
        function movedown(){
          var ball=$("#redball");
-         ball.animate({"top":"+=10px"},10,"linear");
+         ball.animate({"top":"+=10px"},150,"linear");
        }
        
        function moveleft(){
          var ball=$("#redball");
-         ball.animate({"left":"-=10px"},10,"linear");
+         ball.animate({"left":"-=10px"},150,"linear");
        }
        
        function moveright(){
          var ball=$("#redball");
-         ball.animate({"left":"+=10px"},10,"linear");
+         ball.animate({"left":"+=10px"},150,"linear");
        }
        
        function movedownright(){
-         var ball=$("#redball");
-         ball.animate({"left":"+=10px"},10,"linear");
+         movedown();
+         moveright();
        }
        
        function movedownleft(){
-         var ball=$("#redball");
-         ball.animate({"top":"+=10px"},10,"linear");
+        movedown();
+        moveleft();
        }
        
        function moveleftup(){
-         var ball=$("#redball");
-         ball.animate({"top":"-=10px"},10,"linear");
+        moveup(); 
+        moveleft();
+         
        }
        
        function moverightup(){
-         var ball=$("#redball");
-         ball.animate({"top":"-=10px"},10,"linear");
+         moveup();
+         moveright();
        }
        
        function movesquare(){
-         var ball=$("#redball");
-         ball.animate({"left":"+=10px"},10,"linear");
-         ball.animate({"top":"+=10px"},10,"linear");
-         ball.animate({"left":"-=10px"},10,"linear");
-         ball.animate({"top":"-=10px"},10,"linear");
+           
+         moveright();
+         moveright();
+         moveright();
+         moveright();
+         
+         movedown();
+         movedown();
+         movedown();
+         movedown();
+         
+         moveleft();
+         moveleft();
+         moveleft();
+         moveleft();
+         
+         moveup();
+         moveup();
+         moveup();
+         moveup();
+         
+         
        }
        
        function movetriangle(){
-         var ball=$("#redball");
-         ball.animate({"left":"+=10px"},10,"linear");
-         ball.animate({"left":"-=10px"},10,"linear");
-         ball.animate({"left":"-=10px"},10,"linear");
-         ball.animate({"top":"-=10px"},10,"linear");
+           
+         movedownright();
+         movedownright();
+         movedownright();
+         movedownright();
+         
+         moveleft();
+         moveleft();
+         moveleft();
+         moveleft();
+         moveleft();
+         moveleft();
+         moveleft();
+         moveleft();
+         
+         moverightup();
+         moverightup();
+         moverightup();
+         moverightup();
        }
        
+       
        function moveoctagon(){
-         var ball=$("#redball");
-         ball.animate({"left":"+=10px"},10,"linear");
-         ball.animate({"left":"+=10px"},10,"linear");
-         ball.animate({"top":"+=10px"},10,"linear");
-         ball.animate({"top":"+=10px"},10,"linear");
-         ball.animate({"left":"-=10px"},10,"linear");
-         ball.animate({"top":"-=10px"},10,"linear");
-         ball.animate({"top":"-=10px"},10,"linear");
-         ball.animate({"top":"-=10px"},10,"linear");
+         
+         moveright();
+         moveright();
+         moveright();
+         moveright();
+         
+         movedownright();
+         movedownright();
+         movedownright();
+         movedownright();
+         
+         movedown();
+         movedown();
+         movedown();
+         movedown();
+         
+         movedownleft();
+         movedownleft();
+         movedownleft();
+         movedownleft();
+         
+         moveleft();
+         moveleft();
+         moveleft();
+         moveleft();
+         
+         moveleftup();
+         moveleftup();
+         moveleftup();
+         moveleftup();
+         
+         moveup();
+         moveup();
+         moveup();
+         moveup();
+         
+         moverightup();
+         moverightup();
+         moverightup();
+         moverightup();
+         
+         
        }
        
     </script>
